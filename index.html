@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Hospital Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏥 Smart Hospital</h1>
+    <p>Find your destination. Reach it with confidence.</p>
+  </header>
+
+  <main class="container">
+    <h2>Where do you want to go?</h2>
+
+    <label for="language">Language / மொழி</label>
+    <select id="language" onchange="changeLanguage()">
+      <option value="en">English</option>
+      <option value="ta">தமிழ்</option>
+    </select>
+
+    <label id="searchLabel" for="department">Search Department</label>
+    <input id="department" list="departments"
+      placeholder="Example: Cardiology">
+    <datalist id="departments">
+      <option value="Reception">
+      <option value="Emergency">
+      <option value="Cardiology">
+      <option value="Laboratory">
+      <option value="Pharmacy">
+      <option value="Radiology">
+    </datalist>
+
+    <button onclick="findDepartment()">Find Route</button>
+
+    <section id="result" aria-live="polite">
+      <h3>Hospital Map — Demo</h3>
+      <div class="map">
+        <div>🚪 Entrance</div>
+        <div>🛎️ Reception</div>
+        <div>🩺 Cardiology</div>
+        <div>🚑 Emergency</div>
+        <div>🧪 Laboratory</div>
+        <div>💊 Pharmacy</div>
+      </div>
+      <p>Demo map only — not a real hospital floor plan.</p>
+    </section>
+  </main>
+
+  <footer>MyBharat Hackathon Project | Prototype</footer>
+  <script src="script.js"></script>
+</body>
+</html>

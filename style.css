@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f7fb;
+  color: #17324d;
+}
+
+header {
+  background: #075985;
+  color: white;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+.container {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px #00000012;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  font-weight: bold;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input, select {
+  border: 1px solid #b7c9d8;
+}
+
+button {
+  border: none;
+  background: #087f8c;
+  color: white;
+  cursor: pointer;
+  margin-top: 18px;
+}
+
+button:hover {
+  background: #075985;
+}
+
+.map {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.map div {
+  background: #e0f2fe;
+  padding: 18px 8px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #526579;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 12px;
+    padding: 16px;
+  }
+}
